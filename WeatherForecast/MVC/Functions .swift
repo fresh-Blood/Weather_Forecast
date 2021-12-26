@@ -36,16 +36,24 @@ extension ViewController {
         
         if str.contains("snow") {
             image = UIImage(systemName: "cloud.snow.fill")!
+            
         } else if str.contains("blizzard") {
             image = UIImage(systemName: "cloud.snow.fill")!
+            
         } else if str.contains("rain") {
             image = UIImage(systemName: "cloud.rain.fill")!
+            
+        } else if str.contains("drizzle") {
+            image = UIImage(systemName: "cloud.drizzle.fill")!
             
         } else if dayNightCheck == "yes" && str.contains("clear") || str.contains("sun") {
             image = UIImage(systemName: "sun.max.fill")!
         
         } else if dayNightCheck == "no" && str.contains("clear") || str.contains("night") {
             image = UIImage(systemName: "moon.stars.fill")!
+        
+        } else if str.contains("overcast") {
+            image = UIImage(systemName: "cloud.fill")!
             
         } else if str.contains("cloud") && dayNightCheck == "yes" {
             image = UIImage(systemName: "cloud.sun.fill")!
