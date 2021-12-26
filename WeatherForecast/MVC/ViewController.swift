@@ -127,7 +127,7 @@ extension ViewController: UISearchBarDelegate {
                         let weatherStatus = model.current?.weather_descriptions?[0] else {return}
                     guard
                         let dayNight = model.current?.is_day else {return}
-                    dayNight == "yes" ? (self?.view.backgroundColor = .systemTeal) : (self?.view.backgroundColor = .darkGray)
+                    dayNight == "yes" ? self?.view.showDayColor() : self?.view.showNightColor()
                     self?.weatherImage.image = self?.setWeatherStatusImage(status: weatherStatus, dayNightCheck: dayNight)
                 }
             })
@@ -135,3 +135,15 @@ extension ViewController: UISearchBarDelegate {
     }
 }
 
+extension UIView {
+    func showDayColor() {
+        UIView.animate(withDuration: 1.5, animations: {
+            self.backgroundColor = .systemTeal
+        })
+    }
+    func showNightColor() {
+        UIView.animate(withDuration: 1.5, animations: {
+            self.backgroundColor = .darkGray
+        })
+    }
+}
