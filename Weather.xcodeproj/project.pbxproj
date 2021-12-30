@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8447202A27771FE0005C124E /* WeatherForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8447202A27771FE0005C124E /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8447202D27771FE0005C124E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8447202F27771FE0005C124E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8447203127771FE0005C124E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		8447202B27771FE0005C124E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8447202A27771FE0005C124E /* WeatherForecast.app */,
+				8447202A27771FE0005C124E /* Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8447202927771FE0005C124E /* WeatherForecast */ = {
+		8447202927771FE0005C124E /* Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8447203E27771FE1005C124E /* Build configuration list for PBXNativeTarget "WeatherForecast" */;
+			buildConfigurationList = 8447203E27771FE1005C124E /* Build configuration list for PBXNativeTarget "Weather" */;
 			buildPhases = (
 				8447202627771FE0005C124E /* Sources */,
 				8447202727771FE0005C124E /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = WeatherForecast;
+			name = Weather;
 			productName = WeatherForecast;
-			productReference = 8447202A27771FE0005C124E /* WeatherForecast.app */;
+			productReference = 8447202A27771FE0005C124E /* Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8447202527771FE0005C124E /* Build configuration list for PBXProject "WeatherForecast" */;
+			buildConfigurationList = 8447202527771FE0005C124E /* Build configuration list for PBXProject "Weather" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8447202927771FE0005C124E /* WeatherForecast */,
+				8447202927771FE0005C124E /* Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -351,7 +351,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8447202527771FE0005C124E /* Build configuration list for PBXProject "WeatherForecast" */ = {
+		8447202527771FE0005C124E /* Build configuration list for PBXProject "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8447203C27771FE1005C124E /* Debug */,
@@ -360,7 +360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8447203E27771FE1005C124E /* Build configuration list for PBXNativeTarget "WeatherForecast" */ = {
+		8447203E27771FE1005C124E /* Build configuration list for PBXNativeTarget "Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8447203F27771FE1005C124E /* Debug */,
