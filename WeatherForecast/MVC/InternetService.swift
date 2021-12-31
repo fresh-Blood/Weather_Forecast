@@ -9,17 +9,17 @@ final class InternetService: UserInternetService {
     
     func getData(city: String, closure: @escaping (CommonInfo) -> Void) {
         let check = city
-        var newStr = ""
+        var city = ""
         if check.contains(" ") {
-            newStr = check.replacingOccurrences(of: " ", with: "%20")
-            print("CITY: \(newStr)")
+            city = check.replacingOccurrences(of: " ", with: "%20")
+            print("CITY: \(city)")
         } else {
-            newStr += " "
-            newStr = check.replacingOccurrences(of: " ", with: "%20")
-            print("CITY: \(newStr)")
+            city += " "
+            city = check.replacingOccurrences(of: " ", with: "%20")
+            print("CITY: \(city)")
         }
         
-        if let url = URL(string: "http://api.weatherstack.com/current?access_key=09efbe53acd0809fad59a01760faabba&query=\(newStr)") {
+        if let url = URL(string: "http://api.weatherstack.com/current?access_key=09efbe53acd0809fad59a01760faabba&query=\(city)") {
             URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
                 if let data = data {
                     do {
