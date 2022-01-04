@@ -69,6 +69,7 @@ final class ViewController: UIViewController, UserView {
         super.viewDidLoad()
         view.backgroundColor = .systemTeal
         searchField.delegate = self
+        setTapPolitics()
         view.addSubview(searchField)
         view.addSubview(weatherImage)
         view.addSubview(cityLabel)
@@ -145,5 +146,16 @@ extension UIView {
         UIView.animate(withDuration: 1.5, animations: {
             self.backgroundColor = .darkGray
         })
+    }
+}
+
+extension ViewController {
+    private func setTapPolitics() {
+        let gesture = UITapGestureRecognizer(target: self,
+                                             action: #selector(tap))
+        view.addGestureRecognizer(gesture)
+    }
+    @objc private func tap() {
+        searchField.endEditing(true)
     }
 }
