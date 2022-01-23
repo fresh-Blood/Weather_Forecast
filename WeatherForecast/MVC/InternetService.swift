@@ -24,10 +24,9 @@ final class InternetService: UserInternetService {
                 if let data = data {
                     do {
                         let parsedJson = try JSONDecoder().decode(CommonInfo.self, from: data)
-                        print("SUCCESS: \(parsedJson)")
                         closure(parsedJson)
                     } catch let error {
-                        print("ERROR: \(error)")
+                        print(error)
                     }
                 }
             }.resume()
